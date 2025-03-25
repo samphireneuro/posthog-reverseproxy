@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "https://us.i.posthog.com/$1"
+    }
+  ]
+}
