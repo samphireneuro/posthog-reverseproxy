@@ -1,13 +1,14 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "https://us.i.posthog.com/$1"
-    },
-    {
       "src": "/static/(.*)",
       "dest": "https://us.i.posthog.com/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "https://us.i.posthog.com/$1"
     }
   ]
 }
