@@ -3,19 +3,19 @@
   "version": 2,
   "routes": [
     {
-      "src": "/static/(.*)",
+      "src": "/ph/static/(.*)",
       "dest": "https://eu.i.posthog.com/static/$1"
     },
     {
-      "src": "/(.*)",
+      "src": "/ph/(.*)",
       "dest": "https://eu.i.posthog.com/$1"
     },
     {
-      "source": "/plsbl/js/script.js",
+      "src": "/plsbl/js/script.js",
       "destination": "https://plausible.io/js/script.js"
     },
     {
-      "source": "/plsbl/api/event",
+      "src": "/plsbl/api/event",
       "destination": "https://plausible.io/api/event"
     }
   ]
