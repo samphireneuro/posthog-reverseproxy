@@ -17,6 +17,12 @@
     {
       "src": "/plsbl/api/event",
       "dest": "https://plausible.io/api/event"
+    },
+    {
+      "src": "/klvyo/script",
+      "dest": "https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Tw6sBY"
     }
+
+    
   ]
 }
