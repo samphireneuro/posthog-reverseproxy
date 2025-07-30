@@ -20,9 +20,15 @@
     },
     {
       "src": "/klvyo/script",
-      "dest": "https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Tw6sBY"
+      "dest": "/api/klvyo-script"
+    },
+    {
+      "src": "/klvyo/static/(.*)",
+      "dest": "https://static-tracking.klaviyo.com/$1"
+    },
+    {
+      "src": "/klvyo/api/(.*)",
+      "dest": "https://a.klaviyo.com/api/$1"
     }
-
-    
   ]
 }
