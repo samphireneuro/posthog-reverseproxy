@@ -9,6 +9,14 @@
     {
       "src": "/(.*)",
       "dest": "https://eu.i.posthog.com/$1"
+    },
+    {
+      "source": "/plsbl/js/script.js",
+      "destination": "https://plausible.io/js/script.js"
+    },
+    {
+      "source": "/plsbl/api/event",
+      "destination": "https://plausible.io/api/event"
     }
   ]
 }
