@@ -1,7 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-module.exports = async function handler(req: VercelRequest, res: VercelResponse) {
-  try {
+export default async function handler(req: VercelRequest, res: VercelResponse) {  try {
     const upstream = await fetch('https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Tw6sBY');
     let js = await upstream.text();
 
@@ -15,4 +14,4 @@ module.exports = async function handler(req: VercelRequest, res: VercelResponse)
     console.error('Klaviyo proxy error:', err);
     res.status(500).send(`Proxy error: ${err instanceof Error ? err.message : String(err)}`);
   }
-};
+}
