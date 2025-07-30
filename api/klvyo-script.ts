@@ -9,6 +9,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     js = js.replace(/a\.klaviyo\.com/g, `${host}/klvyo/api`);
 
     res.setHeader('Content-Type', 'application/javascript');
+    res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     res.status(200).send(js);
   } catch (err) {
     console.error('Klaviyo proxy error:', err);
