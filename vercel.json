@@ -12,11 +12,11 @@
     },
     {
       "src": "/plsbl/js/script.js",
-      "destination": "https://plausible.io/js/script.js"
+      "dest": "https://plausible.io/js/script.js"
     },
     {
       "src": "/plsbl/api/event",
-      "destination": "https://plausible.io/api/event"
+      "dest": "https://plausible.io/api/event"
     }
   ]
 }
