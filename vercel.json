@@ -1,6 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
+  "functions": {
+    "api/klvyo-script.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
   "routes": [
     {
       "src": "/ph/static/(.*)",
